@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="50sp"
+            android:textColor="@color/brown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+        <View
+            android:layout_width="300dp"
+            android:layout_height="4dp"
+            android:background="@color/brown"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:id="@+id/usernamefield">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:id="@+id/usernametext"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:paddingTop="80dp"
+            android:paddingLeft="40dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/usernametext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:hint="Insert Your Username"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/username">
+        </com.google.android.material.textfield.TextInputEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernamefield"
+        android:id="@+id/passwordfield">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:id="@+id/passwordtext"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/brown"
+            android:textSize="18sp"
+            android:paddingTop="50dp"
+            android:paddingLeft="40dp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/passwordtext"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="30dp"
+            android:hint="Insert Your Password"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/password"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/passwordfield"
+        android:backgroundTint="@color/brown"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:text="Log In"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        android:id="@+id/login_btn">
+    </com.google.android.material.button.MaterialButton>
+
+
+
+</RelativeLayout>

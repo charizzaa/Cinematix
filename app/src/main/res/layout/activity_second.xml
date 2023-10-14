@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkbrown"
+    tools:context=".activity_second">
+
+<!--INI YANG HALO HALO-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/starter"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/username"
+            android:src="@drawable/menu"></ImageView>
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hello, "
+            android:textColor="@color/prime"
+            android:textSize="34sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hello"
+            android:textColor="@color/yellow"
+            android:textSize="34sp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Caca"
+            android:id="@+id/username">
+        </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/person"
+            android:layout_marginLeft="30dp">
+        </ImageView>
+    </LinearLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:background="@color/prime"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/starter"
+        android:id="@+id/line"/>
+<!--SELESAI HALO HALO    -->
+
+<!--TOP START    -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10000dp"
+            android:orientation="vertical">
+
+            <!--TOP END    -->
+
+            <!--LIST START    -->
+            <TextView
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Top Movies"
+                android:textColor="@color/prime"
+                android:textSize="18sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/top"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:id="@+id/row1">
+
+            <!--        SHOWMAN BRAY-->
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded2"
+                android:id="@+id/movie1">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/thegreatestshowman"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/showman"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/titleshowman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showman"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="The Greatest
+                Showman"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:paddingBottom="5dp">
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_rate"
+                    android:layout_below="@id/titleshowman"
+                    android:layout_marginLeft="50dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_below="@id/titleshowman"
+                    android:text="9.7"
+                    android:layout_marginLeft="75dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+            </RelativeLayout>
+            <!--            SHOWMAN KELAR-->
+            <!--            INTERSTELLAR BANG-->
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded2"
+                android:layout_toRightOf="@id/movie1"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/movie2"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/interstellar"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/interstellar"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/titleinter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/interstellar"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Interstellar"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_rate"
+                    android:layout_below="@id/titleinter"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_below="@id/titleinter"
+                    android:text="9.8"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+                <!--        INTERSTELLAR KELAR-->
+            </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/top"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:id="@+id/row2">
+
+                <!--        LITTLE WOMEN SIS-->
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded2"
+                    android:id="@+id/movie3"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/lilwomen"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/lilwomen"
+                        android:layout_centerHorizontal="true">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/titlelil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lilwomen"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingBottom="5dp"
+                        android:text="Little Women"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"></TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_rate"
+                        android:layout_below="@id/titlelil"
+                        android:layout_marginLeft="50dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/titlelil"
+                        android:text="9.6"
+                        android:layout_marginLeft="75dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp">
+                    </TextView>
+                </RelativeLayout>
+                <!--            LITTLE WOMEN KELAR-->
+                <!--            OPPENHEIMER GANTENG-->
+                <RelativeLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded2"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/movie4"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/oppenheimer"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/oppenheimer"
+                        android:layout_centerHorizontal="true">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/titleopp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/oppenheimer"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingBottom="5dp"
+                        android:text="Oppenheimer"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"></TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_rate"
+                        android:layout_below="@id/titleopp"
+                        android:layout_marginLeft="60dp">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/titleopp"
+                        android:text="9.8"
+                        android:layout_marginLeft="85dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp">
+                    </TextView>
+                    <!--        OPPENHEIMER KELAR-->
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
